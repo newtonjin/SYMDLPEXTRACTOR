@@ -9,13 +9,13 @@
 
 Symple python3 extraction tool to gatter/extract the incidents from your DLP into a .csv file that you can work on.
 
+> Tested versions 16.0 MP1, 16.0, 15.8 all the MPs and 15.7
+
 ## Requirements
 
 Python 3 installed</br>
 cx_Oracle module installed (pip install cx_Oracle)</br>
 Connectivity to the Oracle database</br>
-
-> Tested versions 16.0 MP1, 16.0, 15.8 all the MPs and 15.7
 
 
 ## Arguments:
