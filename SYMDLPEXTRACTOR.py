@@ -8,6 +8,7 @@ parser.add_argument("-r", "--rows", type=int, default=30000, help="Max row numbe
 args = parser.parse_args()
 
 # input
+print('made by Newton | feel free to contribute!')
 user = input("Type the database username: ")
 password = input("Type the database password: ")
 dsn = input("Type the DSN (Usually it's in the format host:port/databasename [default port is 1521]): ")
