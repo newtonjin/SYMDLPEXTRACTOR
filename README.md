@@ -15,6 +15,9 @@ Python 3 installed</br>
 cx_Oracle module installed (pip install cx_Oracle)</br>
 Connectivity to the Oracle database</br>
 
+> Tested versions 16.0 MP1, 16.0, 15.8 all the MPs and 15.7
+
+
 ## Arguments:
 -r : Define the max number of rows that will be extracted into the final .CSV file (Default it's 30000) </br>
 Username : prompt to insert the DLP database username </br>
