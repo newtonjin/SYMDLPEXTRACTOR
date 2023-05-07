@@ -20,6 +20,9 @@ Connectivity to the Oracle database</br>
 
 ## Arguments:
 -r : Define the max number of rows that will be extracted into the final .CSV file (Default it's 30000) </br>
+-T : Incident type, you can use this parameter to filter by incident type in the Symantec Data Loss Preventions incidents, if you only want to export a certain type of incidents. The types are, ENDPOINT, NETWORK or DISCOVER.
+
+
 Username : prompt to insert the DLP database username </br>
 Password : prompt to insert the DLP database password </br>
 DSN : connection parameters for the DLP, if you run a instance were the Oracle DB it's inside the enforce, should be localhost:1521/protect (if you changed the DLP database name, insert the used name in the after the /) </br>
