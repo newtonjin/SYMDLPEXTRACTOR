@@ -17,6 +17,11 @@ Python 3 installed</br>
 cx_Oracle module installed (pip install cx_Oracle)</br>
 Connectivity to the Oracle database</br>
 
+## Changes:
+> Version 1.2:</br>
+> * Now the incident severity shows the real value as HIGH, MEDIUM or LOW</br>
+> * Now the incident extraction extracts from the newest incident to the oldest</br>
+> * Now it's possible to filter by the incident type using the argument -T or --type</br>
 
 ## Arguments:
 -r : Define the max number of rows that will be extracted into the final .CSV file (Default it's 30000) </br>
