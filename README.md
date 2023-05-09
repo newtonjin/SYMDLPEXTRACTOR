@@ -16,6 +16,7 @@ Symple python3 extraction tool to gatter/extract the incidents from your DLP int
 Python 3 installed</br>
 cx_Oracle module installed (pip install cx_Oracle)</br>
 Connectivity to the Oracle database</br>
+Visual C++ 14.0 or greater</br>
 
 ## Changes:
 > Version 1.2:</br>
