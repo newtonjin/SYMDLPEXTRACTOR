@@ -18,6 +18,9 @@ cx_Oracle module installed (pip install cx_Oracle)</br>
 Connectivity to the Oracle database</br>
 Visual C++ 14.0 or greater</br>
 
+## Attention
+If you are using python 3.9 or lower use the standart version, if you are using python 3.10 or greater use the _oracle version!
+
 ## Changes:
 > Version 1.2:</br>
 > * Now the incident severity shows the real value as HIGH, MEDIUM or LOW</br>
