@@ -14,18 +14,17 @@ Symple python3 extraction tool to gatter/extract the incidents from your DLP int
 ## Requirements
 
 Python 3 installed</br>
-cx_Oracle module installed (pip install cx_Oracle)</br>
 Connectivity to the Oracle database</br>
+IF YOUR PYTHON IS IN VERSION 3.10 or GREATER:
+oracledb module installed (pip install oracledb)</br>
+
+IF YOUR PYTHON IS IN VERSION 3.9 OR ABOVE:
+cx_Oracle module installed (pip install cx_Oracle)</br>
 Visual C++ 14.0 or greater</br>
 
 ## Attention
 If you are using python 3.9 or lower use the standart version, if you are using python 3.10 or greater use the _oracle version!
 
-## Changes:
-> Version 1.2:</br>
-> * Now the incident severity shows the real value as HIGH, MEDIUM or LOW</br>
-> * Now the incident extraction extracts from the newest incident to the oldest</br>
-> * Now it's possible to filter by the incident type using the argument -T or --type</br>
 
 ## Arguments:
 -r : Define the max number of rows that will be extracted into the final .CSV file (Default it's 30000) </br>
@@ -43,7 +42,22 @@ The .CSV is created in the same folder that you run the script.
 
 The data that will be present in this file will be:
 <pre>
-INCIDENTID	MESSAGEID	POLICYID	POLICYVERSION	INCIDENTSTATUSID	VIOLATIONCOUNT	DETECTIONDATE	POLICYGROUPID	CUSTOMATTRIBUTESRECORDID	ISDELETED	BLOCKEDSTATUS	INCIDENTSEVERITYID	MESSAGETYPE	DISCOVERITEMID	DISCOVERMILLISSINCEFIRSTSEEN	CREATIONDATE	DATAOWNERID	DATAOWNEREMAILID	ISBLOCKEDSTATUSSUPERSEDED	SHOULDHIDEFROMREPORTS	SHOULDOVERRIDEHIDEFROMREPORTS	MESSAGESOURCE	MESSAGEDATE	DISCOVERVIOLATIONID	POLICYID	POLICY_NAME	DESCRIPTION	DATAOWNER_NAME</pre>
+ID	INCIDENTSOURCE	Incident Severity	Occurred On	POLICY	MATCHES	STATUS	DESTINATION	Destination Path	Source File	Source File Path	MACHINE	Device Instance ID	ENDPOINTAPPTITLE	Prevention Status	SUBJECT	Has Attachment	Data Owner Name	Data Owner Email	User	APPLICATION	APPLICATIONPATH
+</pre>
+
+
+
+## Changes:
+> Version 2.0</br>
+> * Changed the informations extracted in the database to match similarly to the report in the DLP enforce</br>
+> * Changed the query to look up more valid information</br>
+> * Inserted a new .py file in the github for the python 3.10 and greater, because cx_Oracle wasn't updated</br>
+
+
+> Version 1.2:</br>
+> * Now the incident severity shows the real value as HIGH, MEDIUM or LOW</br>
+> * Now the incident extraction extracts from the newest incident to the oldest</br>
+> * Now it's possible to filter by the incident type using the argument -T or --type</br>
 
 Thanks!
 
